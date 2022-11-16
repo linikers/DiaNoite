@@ -8,21 +8,48 @@ img {
     background-color: #7cd9ff;
     display: flex;
     width: 100vw;
-    overflow: hidden;
+    
     height: 100vh;
+    transition: 1.5s;
 }
-.nigth {
+.night {
     background-color: #2e4482;
 }
-.midlle, .side {
+.middle, .side {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
-.midlle {
+.middle {
     width: 35%;
 }
+
 .side {
    width: 32.5%;
+}
+
+.sun {
+    position: absolute;
+    transition: 1.5s;
+}
+
+.night .sun {
+    transform: translateY(-100vh);
+}
+
+.moon {
+    width: 50%;
+    position: absolute;
+    transition: 1s;
+    transform: translateY(100vh);
+}
+.night .moon{
+    transform: translateY(0);
+}
+
+.button {
+    position: absolute;
+    bottom: 30px;
 }
