@@ -42,14 +42,61 @@ img {
 .moon {
     width: 50%;
     position: absolute;
-    transition: 1s;
-    transform: translateY(100vh);
+    transition: 1.5s;
+   /* transform: translateY(100vh); */
+   opacity: 0;
 }
 .night .moon{
-    transform: translateY(0);
+   /*transform: translateY(0); */ 
+   opacity: 100%;
+}
+
+.left-cloud, .right-cloud {
+    position: absolute;
+    transition: 1s;
+}
+.night .left-cloud {
+    transform: translateX(-50vw);
+}
+.night .right-cloud {
+    transform: translateX(50vw);
+}
+.left-star {
+    width: 75%;
+    position: absolute;
+    transition: 1s;
+   /* transform: translateX(-50vw); */
+   opacity: 0;
+}
+.night .left-star {
+    /* transform: translateX(0); */
+    opacity: 100%;
+}
+.right-star {
+    width: 75%;
+    position: absolute;
+    transition: 1s;
+    /*transform: translateX(50vw);*/
+    opacity: 0;
+}
+.night .right-star {
+   /* transform: translateX(0); */
+   opacity: 100%;
 }
 
 .button {
+    cursor: pointer;
     position: absolute;
     bottom: 30px;
+    background-color: #fee45a;
+    color: #7cd9ff;
+    font-size: 24px;
+    border: none;
+    border-radius: 8px;
+    width: 25%;
+}
+.night .button {
+    background-color: #e7e7e7;
+    transition: 1.2s;
+    color: #2e4482;
 }

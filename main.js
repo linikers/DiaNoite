@@ -12,4 +12,4 @@ function toggleDiaNoite(){
 }
 
 button.addEventListener("click", toggleDiaNoite)
-console.log("main rodando")
+console.log("sript rodando")
