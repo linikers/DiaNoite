@@ -1,6 +1,13 @@
 let sky = document.querySelector(".sky")
 let button = document.querySelector(".button")
 
+let horaAtual = new Date().getHours()
+
+if(sky.classList.contains("night") && horaAtual < 18){
+    sky.classList.remove("night")
+    button.innerText = "Dia"
+}
+
 function toggleDiaNoite(){
     if(sky.classList.contains("night")){
         sky.classList.remove("night")
@@ -12,4 +19,3 @@ function toggleDiaNoite(){
 }
 
 button.addEventListener("click", toggleDiaNoite)
-console.log("sript rodando")
