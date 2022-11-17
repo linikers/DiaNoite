@@ -3,7 +3,7 @@ let button = document.querySelector(".button")
 
 let horaAtual = new Date().getHours()
 
-if(sky.classList.contains("night") && horaAtual <= 18){
+if(sky.classList.contains("night") && horaAtual > 6 && horaAtual < 19){
     sky.classList.remove("night")
     button.innerText = "Dia"
 }
