@@ -8,7 +8,7 @@ img {
     background-color: #7cd9ff;
     display: flex;
     width: 100vw;
-    
+    overflow: hidden;
     height: 100vh;
     transition: 1.5s;
 }
@@ -55,6 +55,7 @@ img {
     position: absolute;
     transition: 1s;
 }
+
 .night .left-cloud {
     transform: translateX(-50vw);
 }
